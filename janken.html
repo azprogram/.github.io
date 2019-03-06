@@ -1,0 +1,39 @@
+<script type="text/javascript">
+<!--
+function janken (){
+        var guu = "グー！";
+        var tyoki = "チョキ！";
+        var paa = "パー！";
+        var dice = Math.floor(Math.random() * 3);
+        if (dice == 0) {
+            document.getElementById("kekka").innerHTML = guu;
+        } else if  (dice == 1) {
+            document.getElementById("kekka").innerHTML = tyoki;
+        } else {
+            document.getElementById("kekka").innerHTML = paa;
+        }
+}
+-->
+</script>
+<style type="text/css">
+<!--
+#kekka{
+    width: 323px;
+    text-align: center;
+    margin:10px 7px;
+}
+.button{
+    float:left;
+    text-align: center;
+    margin:10px 5px;
+    display: block;
+    width: 90px;
+    border: 1px #cccccc solid;
+}
+-->
+</style>
+<div id="kekka">★ジャンケンゲーム★<br>↓↓↓ボタンを押してジャンケンしてね↓↓↓</div>
+<span class="button"  onclick="janken()">グー</span>
+<span class="button"  onclick="janken()">チョキ</span>
+<span class="button"  onclick="janken()">パー</span>
+<div style="clear: both;"></div>
